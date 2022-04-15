@@ -24,6 +24,38 @@ const colors2 = ["chartreuse", "indigo", "periwinkle", "ochre", "aquamarine", "s
 // b) Create the function that makes the test pass.
 
 
+// create a function called "remFirstShuff" 
+// input param of "array"
+// use shift() method to remove first element of array
+// create a for loop to iterate through the array
+// include Math.random() method to randomize the array
+// return the new randomized array
+
+const remFirstShuff = (array) => {
+
+    array.shift()  
+
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+
+    return array
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 // --------------------2) Create a function that takes an array of numbers and returns an array of the minimum and maximum numbers in that order.
 
 // a) Create a test with expect statements for each of the variables provided.
@@ -35,6 +67,45 @@ const nums2 = [109, 5, 9, 67, 8, 24]
 
 
 // b) Create the function that makes the test pass.
+
+// create a function called "minMax"
+// create param called "array"
+// create a variable called "max" and "min"
+// use reduce() method to obtain only 1 value
+// create a function and use the Math.max/Math.min methods to obtain the max number and min number
+// return the min and max number
+
+const minMax = (array) => {
+    
+    var max = array.reduce(function(a, b) {
+        return Math.max(a, b) 
+    })
+    var min = array.reduce(function(a, b) {
+        return Math.min(a, b) 
+    })
+    return [min, max] 
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // --------------------3) Create a function that takes in two arrays as arguments and returns one array with no duplicate values. STRETCH: Use the spread operator to pass in a dynamic number of arguments.
