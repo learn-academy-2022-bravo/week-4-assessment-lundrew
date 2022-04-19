@@ -124,6 +124,15 @@ describe('combine', () => {
 
 // b) Create the function that makes the test pass.
 
+//create a function called "combine"
+//create two parameters "array1" and "array2"
+//create a variable where array1 and array2 are joined with concat() method
+//create a variable "uniqueChars" with an empty array
+//use the new variable "combined" and access each array with .forEach()
+//include a param called "element" 
+//create if statement the element being pushed comes out as no duplicate.
+
+
 const combine = (array1, array2) => {
 
     let combined = array1.concat(array2)
